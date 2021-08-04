@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+  scrollbar-width: thin; /* For Firefox*/
+}
+:root {
+  --shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+/* Customizing scrollbar for Chrome, Opera, Safari and Edge */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #444;
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+button {
+  cursor: pointer;
+}
+button:focus {
+  outline: none;
+}
+/*--------------- Layout of Modal--------------------- */
+#modal {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#modal:empty {
+  display: none;
+}
+
+#modal > div {
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+  background-color: #fff;
+  max-height: 95vh;
+  overflow-y: auto;
+  max-width: 40%;
+  border-radius: 25px;
+  padding-bottom: 20px;
+  text-align: center;
+  animation: scaleUp 1s ease-in-out;
+  scrollbar-width: none; /* For Firefox */
+}
+/* For Chrome, Opera, Safari and Opera */
+#modal > div::-webkit-scrollbar {
+  display: none;
+}
+
+#modal > div > div {
+  width: 100%;
+}
+
+@keyframes scaleUp {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

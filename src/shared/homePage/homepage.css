@@ -1,0 +1,226 @@
+body {
+  background-color: #f7f7f7;
+}
+#top {
+  width: 100%;
+  background-color: rgba(0, 65, 240, 0.32);
+  padding: 75px 50px 75px 95px;
+  display: flex;
+  justify-content: space-around;
+}
+#logo {
+  width: 25%;
+  transform: rotate(-25deg);
+  margin-left: -200px;
+  transition: all 1s ease-in-out;
+  animation: logoAnimate 1s ease-in-out;
+}
+
+#logo:hover {
+  transform: rotate(25deg);
+}
+#logo > img {
+  width: 100%;
+  border-radius: 33px;
+}
+#top-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+#btn-signup,
+#btn-login {
+  width: 350px;
+  font-family: "PT Mono", monospace;
+  font-size: 2.5rem;
+  padding: 8px 0;
+  border-radius: 85px;
+  transition: all 1s ease-in-out;
+  box-shadow: var(--shadow);
+  animation: slideLeft 1s ease-in-out;
+}
+#btn-signup {
+  background-color: #fff;
+  border: 4px solid #0047ff;
+  color: #000;
+}
+#btn-login {
+  background-color: #284aa2;
+  color: #fff;
+  border: none;
+}
+#btn-signup:hover,
+#btn-login:hover {
+  transform: scale(1.1);
+}
+#middle {
+  margin: auto;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#middle > h1 {
+  font-family: "Salsa", cursive;
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+#first-line {
+  width: 50%;
+  height: 0px;
+  margin-top: 0px;
+  border-top: 3px solid #000;
+}
+#second-line {
+  width: 40%;
+  height: 0px;
+  margin-top: 15px;
+  border-top: 3px solid #000;
+  box-shadow: var(--shadow);
+}
+#third-line {
+  width: 20%;
+  height: 15px;
+  background-color: #0047ff;
+  border-radius: 10px;
+  margin-top: 15px;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+#middle > p {
+  text-align: center;
+  line-height: 50px;
+  font-size: 1.1rem;
+  font-family: "Rhodium Libre", serif;
+}
+#features {
+  width: 98%;
+  margin-left: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 250px 0;
+}
+#features > div {
+  background-color: #fff;
+  width: 18%;
+  padding: 15px;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #000000;
+  box-shadow: var(--shadow);
+  border-radius: 35px;
+}
+#features > div > h2 {
+  font-family: "Red Hat Text", sans-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+#features > div > p {
+  margin-top: 0;
+  width: 70%;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.1rem;
+  text-align: center;
+  text-shadow: var(--shadow);
+}
+#features > div > button {
+  width: 70%;
+  border: none;
+  padding: 10px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  background: #476fdc;
+  border-radius: 19px;
+  box-shadow: var(--shadow);
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  text-shadow: var(--shadow);
+  -webkit-text-stroke: 0.7px #000;
+  color: #fff;
+}
+#credits {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#credits > h2 {
+  margin: auto;
+  width: 100%;
+  font-family: "Salsa", cursive;
+  font-size: 2.5rem;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+  text-align: center;
+}
+#credits > div {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#credits > div > div {
+  width: 15%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#credits > div > div > img {
+  width: 100%;
+  border-radius: 100%;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+#credits > div > div > img:hover {
+  opacity: 0.5;
+}
+#credits > div > div > p {
+  font-family: "PT Mono", monospace;
+  font-size: 1.2rem;
+  text-align: center;
+}
+.github-icon {
+  position: relative;
+  top: -220px;
+  left: 4px;
+  font-size: 5rem;
+  border-radius: 100%;
+  cursor: pointer;
+  visibility: hidden;
+  animation: scaleUp 1s ease-in-out;
+}
+
+/* Animations */
+@keyframes logoAnimate {
+  0% {
+    transform: rotate(-25deg) scale(0);
+  }
+  100% {
+    transform: rotate(-25deg) scale(1);
+  }
+}
+@keyframes slideLeft {
+  0% {
+    transform: translateX(800px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+@keyframes slideUp {
+  0% {
+    transform: translateY(50px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}

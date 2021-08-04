@@ -1,0 +1,41 @@
+
+{
+    "msgs": [
+    {
+    "value": "Hey There!! This is the Starting of This Topic.",
+    "topicName": "poverty",
+    "_id": "6045119487d6de3b28e441dc",
+    "firstName": "Chirag",
+    "lastName": "Jain",
+    "smallImgUri": "https://i.imgur.com/Qj5Gz8E.jpg",
+    "imgUri": "https://i.imgur.com/OsME7qws.png",
+    "largeImgUri": "https://i.imgur.com/OsME7qw.png",
+    "username": "chirag0174.be20@chitkara.edu.in"
+    },
+    {
+    "value": "Here we will discuss our ideas about Poverty, and what we can do as developers to deal with this issues.",
+    "topicName": "poverty",
+    "_id": "6045119487d6de3b28e441dc",
+    "firstName": "Chirag",
+    "lastName": "Jain",
+    "smallImgUri": "https://i.imgur.com/Qj5Gz8E.jpg",
+    "imgUri": "https://i.imgur.com/OsME7qws.png",
+    "largeImgUri": "https://i.imgur.com/OsME7qw.png",
+    "username": "chirag0174.be20@chitkara.edu.in"
+    },
+    {
+    "value": "Hii",
+    "topicName": "poverty",
+    "_id": "609d26ace4dbc900152410a5",
+    "firstName": "Harshit",
+    "lastName": "Sharma",
+    "smallImgUri": "https://i.imgur.com/Qj5Gz8E.jpg",
+    "imgUri": "https://i.imgur.com/OsME7qws.png",
+    "largeImgUri": "https://i.imgur.com/OsME7qw.png",
+    "username": "iharshitsharma@outlook.com"
+    }
+    ],
+    "_id": "6047a925eee17921e8cfa302",
+    "topic": "poverty",
+    "__v": 0
+    }

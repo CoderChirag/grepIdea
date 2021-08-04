@@ -1,0 +1,196 @@
+/* For IpadPro and big tablet sized Devices */
+@media only screen and (max-width: 1024px) {
+  #modal > div {
+    max-width: 60vw;
+  }
+  #logo {
+    width: 35%;
+    margin-left: -100px;
+  }
+  #top-buttons {
+    justify-content: space-between;
+    width: 300px;
+  }
+  #middle {
+    width: 60%;
+  }
+  #middle > h1 {
+    font-size: 2rem;
+  }
+  #features {
+    width: 100%;
+    padding-bottom: 50px;
+  }
+  #features > div {
+    width: 30%;
+  }
+  #features > div > h2 {
+    font-size: 1.2rem;
+  }
+  #features > div > button {
+    width: 100% !important;
+  }
+}
+/* For Ipad and below Devices */
+@media only screen and (max-width: 768px) {
+  #close-icon {
+    left: 40%;
+  }
+  #modal-header {
+    font-size: 3rem;
+  }
+  .modal-row,
+  .modal-short-row {
+    width: 100%;
+  }
+  .modal-label {
+    width: 55%;
+    font-size: 1rem;
+  }
+  .modal-short-width-input {
+    width: 85%;
+    margin-left: 15px;
+  }
+}
+/* For Low width tablets like Surface Duo */
+@media only screen and (max-width: 540px) {
+  #modal > div {
+    max-width: 95vw;
+    max-height: 100vh;
+  }
+  #top {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px 0;
+  }
+  #top > div {
+    margin-bottom: 20px;
+  }
+  #logo {
+    width: 40%;
+    margin-left: 0;
+    transform: rotate(0deg);
+  }
+  #logo:hover {
+    transform: rotate(0deg);
+  }
+  #btn-signup,
+  #btn-login {
+    width: 100%;
+    font-size: 1.8rem;
+  }
+  #btn-signup {
+    margin-bottom: 20px;
+  }
+  #btn-signup:hover,
+  #btn-login:hover {
+    transform: scale(1);
+  }
+  #middle {
+    width: 80%;
+  }
+  #middle > h1 {
+    font-size: 2rem;
+  }
+  #features {
+    padding-top: 50px;
+  }
+  #features > div {
+    width: 40%;
+    margin-top: 0 !important;
+    margin-bottom: 50px;
+  }
+  #credits > div > div {
+    width: 40%;
+  }
+  #credits > div > div > p {
+    font-size: 2rem;
+  }
+}
+/* For Standard Mobile devices */
+@media only screen and (max-width: 415px) {
+  #btn-signup,
+  #btn-login {
+    font-size: 1.5rem;
+  }
+  #logo {
+    width: 80%;
+  }
+  #middle {
+    width: 80%;
+  }
+  #middle > h1 {
+    font-size: 1.4rem;
+  }
+  #middle > p {
+    font-size: 1rem;
+  }
+  #features > div {
+    width: 80%;
+  }
+  #features > div > h2 {
+    font-size: 1.8rem;
+  }
+  #features > div > button {
+    font-size: 1.4rem !important;
+  }
+  #features > div:nth-child(2n-1) > button {
+    font-size: 2rem !important;
+  }
+  #credits > div > div > p {
+    font-size: 1.2rem;
+  }
+  #verify-heading {
+    font-size: 2rem;
+  }
+  #otp-text {
+    font-size: 1.2rem;
+    width: 90%;
+  }
+  .otp-input {
+    width: 17%;
+  }
+  .modal-button-verify {
+    width: 90%;
+  }
+}
+/* For low-width mobile devices */
+@media only screen and (max-width: 320px) {
+  #btn-signup,
+  #btn-login {
+    width: 70%;
+    margin: auto;
+    border-radius: 25px;
+    font-size: 1.2rem;
+  }
+  #btn-signup {
+    margin-bottom: 20px;
+  }
+  #middle > h1 {
+    font-size: 1.1rem;
+  }
+  #middle > p {
+    font-size: 0.8rem;
+  }
+  #features > div > h2 {
+    font-size: 1.4rem;
+  }
+  #features > div > button {
+    font-size: 1rem !important;
+  }
+  #features > div:nth-child(2n-1) > button {
+    font-size: 1.5rem !important;
+  }
+  #credits > div > div > p {
+    font-size: 1rem;
+  }
+  #otp-text {
+    width: 95%;
+    font-size: 0.8rem;
+  }
+  .otp-input {
+    width: 18%;
+    margin: 7px;
+  }
+}

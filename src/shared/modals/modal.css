@@ -1,0 +1,144 @@
+#close-icon {
+  position: relative;
+  left: 45%;
+  margin-top: 10px;
+  cursor: pointer;
+  font-size: 2rem;
+  transition: all 0.2s ease-in-out;
+  color: rgb(4, 70, 253);
+}
+#close-icon:hover {
+  transform: rotate(90deg);
+}
+
+#modal-header {
+  font-family: "Satisfy", cursive;
+  text-shadow: var(--shadow);
+  font-weight: 400;
+  font-size: 5rem;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 10px;
+  width: 100%;
+  /* color: rgb(248, 95, 103); */
+  color: rgba(0, 65, 240, 0.32);
+  -webkit-text-stroke: 1px rgba(0, 0, 0, 0.8);
+}
+.modal-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-right: auto;
+}
+.modal-row {
+  width: 80%;
+  text-align: left;
+  padding-left: 30px;
+}
+.modal-label {
+  font-size: 1.5rem;
+  width: 58%;
+}
+.modal-input {
+  width: 92.8%;
+  border: none;
+  background-color: lightgray;
+  display: block;
+  margin: 10px 0;
+  font-size: 1.3rem;
+  padding: 13px;
+  border-radius: 5px;
+}
+.modal-short-row {
+  width: 40%;
+  margin-left: -13px;
+}
+.modal-short-width-input {
+  width: 81%;
+  margin: 10px 0;
+  margin-top: -15px;
+  font-size: 1.3rem;
+  padding: 13px;
+  border-radius: 5px;
+  border: none;
+  background-color: lightgray;
+}
+.modal-validation-text {
+  margin-top: -6px;
+  margin-left: 5px;
+  color: red;
+  font-size: 1rem;
+}
+.last-div {
+  width: 70%;
+  margin-top: 5%;
+  margin-left: 17px;
+  text-align: center;
+}
+.modal-button {
+  width: 100%;
+  border: none;
+  height: 60px;
+  /* background-color: rgb(248, 95, 103); */
+  background-color: rgb(4, 70, 253);
+  box-shadow: var(--shadow);
+  color: #ffffff;
+  font-size: 2.5rem;
+  text-align: center;
+  border-radius: 15px;
+  transition: all 0.2s ease-in-out;
+}
+.modal-button:hover {
+  background-color: rgb(35, 91, 243);
+}
+.modal-button-login {
+  margin-left: -32px;
+}
+.modal-button-verify {
+  width: 50%;
+  font-size: 2rem;
+  margin-top: 38px;
+}
+#modal-button-below-text-span {
+  color: blue;
+  cursor: pointer;
+}
+#verify-heading {
+  width: 100%;
+  text-align: center;
+  margin-top: 0;
+}
+#otp-text {
+  width: 60%;
+  text-align: center;
+  margin-top: 0;
+}
+#otp-input-div {
+  width: 80%;
+}
+.otp-input {
+  width: 12%;
+  margin: 10px;
+  padding: 10px;
+  font-size: 1.5rem;
+  border: none;
+  background-color: #c4c4c4;
+  border-bottom: 1px solid black;
+  border-radius: 10px;
+  -moz-appearance: textfield;
+  text-align: center;
+}
+.otp-input:focus {
+  outline: none;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+#resend-otp-btn {
+  border: none;
+  background-color: #ffffff;
+}
