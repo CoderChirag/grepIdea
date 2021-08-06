@@ -1,0 +1,45 @@
+{
+  "name": "grepidea",
+  "description": "GrepIdea - Place Where Ideas Take Birth",
+  "scripts": {
+    "start": "node dist/index.js"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app"
+    ]
+  },
+  "dependencies": {
+    "@sendgrid/mail": "^7.4.2",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "isomorphic-fetch": "^3.0.0",
+    "mongoose": "^5.11.18",
+    "passport": "^0.4.1",
+    "passport-local-mongoose": "^6.1.0",
+    "serialize-javascript": "^5.0.1"
+  },
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CoderChirag/grepIdea.git"
+  },
+  "author": "Grepians",
+  "license": "MIT",
+  "homepage": "https://github.com/CoderChirag/grepIdea#readme",
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
