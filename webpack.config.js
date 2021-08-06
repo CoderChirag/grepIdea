@@ -8,7 +8,7 @@ const browserConfig = {
   mode: "production",
   entry: "./src/browser/index.js",
   output: {
-    path: path.resolve(__dirname, "build/dist"),
+    path: path.resolve(__dirname, "dist"),
     filename: "bundle.js",
   },
   module: {
@@ -43,7 +43,7 @@ const serverConfig = {
   target: "node",
   externals: [nodeExternals()],
   output: {
-    path: path.resolve(__dirname, "build/dist"),
+    path: path.resolve(__dirname, "dist"),
     filename: "index.js",
   },
   module: {
