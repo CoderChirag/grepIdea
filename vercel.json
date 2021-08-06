@@ -1,4 +1,10 @@
 {
+  "builds": [
+    {
+      "src": "./dist/server.js",
+      "use": "@vercel/node"
+    }
+  ],
   "env": {
     "SECRET_KEY": "JainChirag",
     "MONGO_USER_NAME": "admin-ChiragJain",
