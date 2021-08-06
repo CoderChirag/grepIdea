@@ -1,15 +1,8 @@
 {
-  "version": 2,
-  "builds": [
-    {
-      "src": "./src/server/index.js",
-      "use": "@vercel/node"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/"
-    }
-  ]
+  "env": {
+    "SECRET_KEY": "JainChirag",
+    "MONGO_USER_NAME": "admin-ChiragJain",
+    "MONGO_PASSWORD": "TkMuYAJuu7oCfT0M",
+    "SG_API_KEY": "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"
+  }
 }
