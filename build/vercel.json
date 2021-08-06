@@ -1,0 +1,16 @@
+{
+  "builds": [{ "src": "dist/index.js", "use": "@vercel/node" }],
+  "routes": [
+    {
+      "src": "(.*)",
+      "methods": ["GET", "POST", "PATCH", "DELETE", "OPTIONS"],
+      "headers": {
+        "Access-Control-Allow-Headers": "Origin, X-Requested-With, Content-Type, Accept",
+        "Access-Control-Allow-Credentials": "true"
+      },
+
+      "dest": "dist/index.js",
+      "continue": true
+    }
+  ]
+}
