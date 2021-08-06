@@ -3,8 +3,8 @@
   "description": "GrepIdea - Place Where Ideas Take Birth",
   "scripts": {
     "build": "webpack",
-    "start": "node build/dist/index.js",
-    "dev": "webpack && node build/dist/index.js"
+    "start": "cd build && node dist/index.js",
+    "dev": "webpack && cd build && node dist/index.js"
   },
   "babel": {
     "presets": [
