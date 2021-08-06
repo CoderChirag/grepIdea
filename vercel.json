@@ -1,14 +1,16 @@
 {
-  "builds": [
+  "builds": [{ "src": "dist/index.js", "use": "@now/node-server" }],
+  "routes": [
     {
-      "src": "./index.js",
-      "use": "@vercel/node"
+      "src": "(.*)",
+      "methods": ["GET", "POST", "PATCH", "DELETE", "OPTIONS"],
+      "headers": {
+        "Access-Control-Allow-Headers": "Origin, X-Requested-With, Content-Type, Accept",
+        "Access-Control-Allow-Credentials": "true"
+      },
+
+      "dest": "dist/index.js",
+      "continue": true
     }
-  ],
-  "env": {
-    "SECRET_KEY": "JainChirag",
-    "MONGO_USER_NAME": "admin-ChiragJain",
-    "MONGO_PASSWORD": "TkMuYAJuu7oCfT0M",
-    "SG_API_KEY": "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"
-  }
+  ]
 }
